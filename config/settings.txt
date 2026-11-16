@@ -1,0 +1,3 @@
+bgmOn=true
+soundOn=true
+colorOn=true
