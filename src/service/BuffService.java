@@ -77,10 +77,8 @@ public class BuffService {
     */
     public static void BuffService_drawAndApply() {
         // 在此处完成代码
-        //得到id
-        int buffid = Global.rand.nextInt(Global.buffPool.size()-1)+1;
-        //获取buff
-        Buff buff = Global.buffPool.get(buffid);
+        //从 buffPool 随机抽 1 个：索引范围必须是 0 ~ size-1，否则池子第一个 Buff 永远抽不到
+        Buff buff = Global.buffPool.get(Global.rand.nextInt(Global.buffPool.size()));
         //设置血量上限
         Global.player.setHpMax(Global.player.getHpMax()+buff.getHpMaxAdd());
         //是否恢复血量
