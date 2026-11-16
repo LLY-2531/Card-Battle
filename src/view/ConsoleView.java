@@ -17,7 +17,6 @@ public class ConsoleView {
     public static final String MAGENTA = "\033[35m";
 
     /*
-        负责人:万
         功能: 启用 Windows 控制台 ANSI 颜色转义
     */
     public static void enableWindowsAnsi() {
@@ -34,7 +33,6 @@ public class ConsoleView {
     }
 
     /*
-        负责人:万
         功能: 打印带颜色的文本，受 settings.get("colorOn") 控制
         Global.settings.get("colorOn");
         如果Global.settings.get("colorOn")是true->打开颜色开关
@@ -52,7 +50,6 @@ public class ConsoleView {
     }
 
     /*
-        负责人:万
         功能: 读取一行输入，并去掉首尾空格
         参数：String prompt""
         返回值: String
@@ -63,7 +60,6 @@ public class ConsoleView {
         }
 
     /*
-        负责人:万
         功能: 延迟打印
         参数：ms停顿的秒数
         返回值: void
@@ -79,7 +75,6 @@ public class ConsoleView {
 
     // -------------------- 主菜单界面 --------------------
     /*
-        负责人:陈
         功能: 主菜单主循环
         while(true){
          展示 1-6 选项，有存档时标注
@@ -158,7 +153,6 @@ public class ConsoleView {
 
     // -------------------- 输入名字界面 --------------------
     /*
-        负责人：陈
         功能: 1.输入玩家名，调用Global.player创建新的玩家对象，再setName存进玩家类
        2 初始化新游戏数据，按照数值文件中的参数初始化player属性值
        Global.player.setxxxx
@@ -195,7 +189,6 @@ public class ConsoleView {
 
     // -------------------- 读取存档界面 --------------------
     /*
-        负责人:龙
         功能: 输入存档名读取，
         1.提示玩家输入存档名
         2.判断是否有此存档（调用SaveService_load(玩家输入的存档名)）
@@ -273,7 +266,6 @@ public class ConsoleView {
 
     // -------------------- 开局 Buff 界面 --------------------
     /*
-        负责人:聂童童
         功能: 1.展示抽到的 Buff 和当前属性
         遍历buff池（Global.buffpool）获取其中每个对象的id与玩家buffid对比（Global.player.getBuffId()）
         2.打印buff,展示玩家当前属性,打印时调用printColored
@@ -314,7 +306,6 @@ public class ConsoleView {
 
     // -------------------- 战斗界面 --------------------
     /*
-        负责人:宋~
         功能: 战斗主循环
             1. 调 BattleService_start 初始化传入Global.floor
            进入战斗循环
@@ -635,7 +626,6 @@ public class ConsoleView {
         }
     }
     /*
-        负责人:宋~
         功能: 玩家出牌阶段
             1.展示手中的三张手牌，循环接受输入
             while(true){
@@ -720,7 +710,6 @@ public class ConsoleView {
     }
 
     /*
-        负责人:宋~
         功能: 敌人回合阶段
            1. 调 BattleService_enemyTurn获取日志，遍历延迟打印日志
     */
@@ -740,7 +729,6 @@ public class ConsoleView {
 
     // -------------------- 奖励界面 --------------------
     /*
-        负责人:陈
         功能: 1.胜利后回血、恢复最大血量的25%且不超过最大血量Global.player.setHp
         2.打印日志
         3.选奖励、打印奖励选项(提升血量最大值，速度，护甲属性)
@@ -816,7 +804,6 @@ public class ConsoleView {
 
     // -------------------- 设置界面 --------------------
     /*
-        负责人:陈
         功能: 修改开关并保存
        Global 已申明
         public static HashMap<String, Boolean> settings = new HashMap<String, Boolean>();
@@ -892,7 +879,6 @@ public class ConsoleView {
 
     // -------------------- 团队介绍界面 --------------------
     /*
-        负责人:龙
         功能: 展示成员
     */
     public static void teamView() {
@@ -910,7 +896,6 @@ public class ConsoleView {
     }
 //---------------------------排行榜界面------------------
     /*
-      负责人：陈
       功能：展示排行榜
       1.调用RankService.RankService_load()获取排行榜数据装入ArrayList<Rank>
           如果没有数据打印提示

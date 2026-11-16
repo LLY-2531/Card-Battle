@@ -13,7 +13,6 @@ public class BattleService {
 
 
     /*
-        负责人:聂童童
         功能: 开始新一层战斗
             1. 调 EnemyService_create(floor) 创建敌人
            调用 EnemyService.EnemyService_create(f);
@@ -52,7 +51,6 @@ public class BattleService {
     }
 
     /*
-        负责人:宋~
         功能: 结算伤害血量
             先扣临时护甲(敌人是defense)  -> 扣血
         参数: raw 原始伤害
@@ -102,7 +100,6 @@ public class BattleService {
     }
 
     /*
-        负责人:龙
         功能:
 
             1.玩家打出一张手牌
@@ -203,7 +200,6 @@ public class BattleService {
         return logList;
     }
     /*
-        负责人:陈
         功能: 敌人回合
             根据 currentEnemyIntent (敌人意图)结算伤害和护甲
             实际伤害 = (int)(技能基础伤害 * currentEnemy.attackBonus)

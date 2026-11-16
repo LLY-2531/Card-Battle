@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class EnemyService {
     /*
-       负责人:陈
        功能: 初始化普通技能池、Boss技能池、5层敌人模板(enemy Map)(integer对应敌人层数，string对应敌人名字)
        1.Global.normalEnemySkillPool.add
        2.Global.bossSkillPool.add
@@ -39,7 +38,6 @@ public class EnemyService {
     }
 
     /*
-        负责人:陈
         功能: 根据层数（传入的参数f）从 enemy Map 创建当前敌人副本，赋给 currentEnemy
          已申明当前敌人
     public static Enemy currentEnemy;
@@ -59,7 +57,6 @@ public class EnemyService {
     }
 
     /*
-        负责人:陈
         功能: 敌人随机抽技能
             currentEnemy.isBoss() 为 true 从 bossSkillPool 抽，否则从 normalEnemySkillPool 抽
             Global.bossSkillPool

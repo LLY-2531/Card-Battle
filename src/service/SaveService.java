@@ -16,7 +16,6 @@ public class SaveService {
     public static final String LEADERBOARD_FILE = "config/leaderboard.txt";
 
     /*
-        负责人:万
         功能: 存档
         把当前玩家属性与层数保存到 saves/玩家名.txt (IO流)
         创建file->命名SAVE_DIR,Global.player.getName()+".txt"
@@ -53,7 +52,6 @@ public class SaveService {
     }
 
     /*
-        负责人:万
         功能: 检查 saves（SAVE_DIR） 目录下是否有存档文件
         参数: void
         返回值: boolean 是否有存档
@@ -75,7 +73,6 @@ public class SaveService {
     }
 
     /*
-        负责人:万
         功能: 读取指定名字的存档，封装为 SaveData （在model中定义）返回
         参数: name 玩家名
         返回值: SaveData 找不到返回 null
@@ -132,7 +129,6 @@ public class SaveService {
 
 
     /*
-        负责人:龙
         功能: 遍历 saves（SAVE_DIR）目录，返回所有存档名（不含 .txt 后缀），按名字排序
         参数: void
         返回值: ArrayList<String> 存档名列表，没有存档时返回空列表

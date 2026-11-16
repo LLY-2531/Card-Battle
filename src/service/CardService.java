@@ -9,7 +9,6 @@ import java.util.Random;
 
 public class CardService {
     /*
-       负责人:聂童童
        功能: 初始化 22 张永久卡到 playerCardPool 中 (按参数表填写数值)
        Global.playerCardPool.add
        注意数据存储在Global中，用Global.playerCardPool.add
@@ -49,7 +48,6 @@ public class CardService {
     }
 
     /*
-        负责人:聂童童
         功能: 从 playerCardPool 随机抽 5 张不重复的卡，放入 playerCardPoolDraw（放5张）
         Global.playerCardPoolDraw.
         1.清空playerCardPoolDraw

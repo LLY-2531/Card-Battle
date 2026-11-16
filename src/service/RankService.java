@@ -13,7 +13,6 @@ import java.util.Iterator;
 public class RankService {
     private static final String RANK_FILE = "config/leaderboard.txt";
     /*
-    * 负责人：龙
     * 功能：添加记录
     * 1.调用loadRecords()读取旧数据存入新建的集合中
     * 2.把newRecord加进新集合
@@ -49,7 +48,6 @@ public class RankService {
         return b.getScore() - a.getScore();
     };
     /*
-    负责人：宋~
     功能：读取成绩
     从文件中读取所有记录，封装成ArrayList返回
     1.创建一个ArrayList<Rank>列表，用于存储排行榜数据。
@@ -101,7 +99,6 @@ public class RankService {
         return ranks;
     }
     /*
-    负责人：万
     功能：写回文件
     1.创建config文件夹
     2.把list写入RANK_FILE（这是定义好的路径“config/leaderboard.txt”）

@@ -4,7 +4,6 @@ import model.Buff;
 
 public class BuffService {
     /*
-      负责人:龙
       功能: 初始化 5 个 Buff 到 buffPool 中 (强健体魄/迅捷之靴/铁壁护符/生命之泉/疾风之翼)
      调用 Global.bossSkillPool.add
       参数: void
@@ -62,7 +61,6 @@ public class BuffService {
 
 
     /*
-        负责人:龙
         功能: 开局抽取buff并赋值加成属性
         从 buffPool 随机抽 1 个，立即应用到 player
             1. player.hpMax 和 hp 同步加上 hpMaxAdd
